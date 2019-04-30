@@ -10,4 +10,4 @@ RUN pip install xgboost
 RUN pip install seaborn
 RUN pip install h5py
 
-RUN pip install torchnet==0.0.4
+#RUN pip install torchnet==0.0.4

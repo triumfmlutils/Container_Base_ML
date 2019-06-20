@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:19.04-py3
+FROM nvcr.io/nvidia/pytorch:19.03-py3
 
 LABEL maintainer="wfedorko@triumf.ca"
 
@@ -7,5 +7,4 @@ RUN apt-get --yes upgrade
 
 RUN pip install xgboost seaborn h5py plotly
 
-#RUN pip install torchnet==0.0.4
  

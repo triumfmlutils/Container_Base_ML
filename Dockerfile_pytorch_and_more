@@ -3,7 +3,7 @@ FROM nvcr.io/nvidia/pytorch:19.06-py3
 LABEL maintainer="wfedorko@triumf.ca"
 
 RUN apt-get update
-RUN apt-get --yes upgrade
+RUN apt-get --yes upgrade && apt-get --yes install strace locate
 
 RUN pip install xgboost lightgbm seaborn h5py plotly
 

@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:19.12-py3
+FROM nvcr.io/nvidia/pytorch:20.02
 LABEL maintainer="wfedorko@triumf.ca"
 
 RUN apt-get update

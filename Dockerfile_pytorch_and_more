@@ -5,6 +5,7 @@ RUN apt-get update
 RUN apt-get --yes upgrade && apt-get --yes install strace locate pydb ddd libxtst6 libxtst-dev
 
 RUN apt-get --yes install google-perftools
+RUN apt-get --yes install hdf5-tools h5utils libhdf5-dev
 
 
 

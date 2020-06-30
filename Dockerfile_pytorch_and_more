@@ -2,7 +2,10 @@ FROM nvcr.io/nvidia/pytorch:20.03-py3
 LABEL maintainer="wfedorko@triumf.ca"
 
 RUN apt-get update
-RUN apt-get --yes upgrade && apt-get --yes install strace locate pydb ddd libxtst6 libxtst-dev google-perftools
+RUN apt-get --yes upgrade && apt-get --yes install strace locate pydb ddd libxtst6 libxtst-dev
+
+RUN apt-get --yes install google-perftools
+
 
 
 RUN pip install xgboost lightgbm seaborn h5py plotly torchviz line_profiler bokeh tqdm pandas ipywidgets python-csv memory_profiler

@@ -10,12 +10,12 @@ RUN apt-get --yes install hdf5-tools h5utils libhdf5-dev
 COPY pre_config.txt .
 
 
-RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
-debconf-set-selections pre_config.txt && \
-echo $DEBIAN_FRONTEND $DEBCONF_NONINTERACTIVE_SEEN=true && \
-debconf-show tzdata && \
-wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' && \
-apt --yes install ./vscode.deb && rm vscode.deb
+#RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
+#debconf-set-selections pre_config.txt && \
+#echo $DEBIAN_FRONTEND $DEBCONF_NONINTERACTIVE_SEEN=true && \
+#debconf-show tzdata && \
+#wget -O vscode.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' && \
+#apt --yes install ./vscode.deb && rm vscode.deb
 
 
 
